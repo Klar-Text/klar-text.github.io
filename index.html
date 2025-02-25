@@ -2,6 +2,49 @@
 <html lang='en'>
 
 <head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px;
+        }
+        .member {
+            width: 200px;
+            text-align: center;
+        }
+        .member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .name {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .title {
+            font-size: 14px;
+            color: gray;
+            margin-top: 5px;
+        }
+        .icons {
+            margin-top: 10px;
+        }
+        .icons a {
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 5px;
+            color: #0073e6;
+        }
+    </style>
     <base href=".">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
@@ -91,6 +134,71 @@
         </tr>
     </table>
 
+
+    <div class="container">
+        <div class="member">
+            <img src="profile1.jpg" alt="Matthew Shardlow">
+            <div class="name">Matthew Shardlow</div>
+            <div class="title">Senior Lecturer at Manchester Metropolitan University, UK</div>
+            <div class="icons">
+                <a href="#">🌍</a>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="profile2.jpg" alt="Horacio Saggion">
+            <div class="name">Horacio Saggion</div>
+            <div class="title">Chair in Computer Science at Universitat Pompeu Fabra</div>
+            <div class="icons">
+                <a href="#">🌍</a>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="profile3.jpg" alt="Fernando Alva-Manchego">
+            <div class="name">Fernando Alva-Manchego</div>
+            <div class="title">Lecturer at Cardiff University, UK</div>
+            <div class="icons">
+                <a href="#">🌍</a>
+                <a href="#">🐦</a>
+                <a href="#">🔗</a>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="profile4.jpg" alt="Marcos Zampieri">
+            <div class="name">Marcos Zampieri</div>
+            <div class="title">Assistant Professor at George Mason University, USA</div>
+            <div class="icons">
+                <a href="#">🌍</a>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="profile5.jpg" alt="Kai North">
+            <div class="name">Kai North</div>
+            <div class="title">Research Assistant at George Mason University, USA</div>
+            <div class="icons">
+                <a href="#">🔍</a>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="profile6.jpg" alt="Sanja Štajner">
+            <div class="name">Sanja Štajner</div>
+            <div class="title">Independent Researcher, Karlsruhe, Germany</div>
+            <div class="icons">
+                <a href="#">🌍</a>
+                <a href="#">🔗</a>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="profile7.jpg" alt="Regina Stodden">
+            <div class="name">Regina Stodden</div>
+            <div class="title">PhD Student at Heinrich Heine University Düsseldorf, Germany</div>
+        </div>
+    </div>
 
 
     <footer>
