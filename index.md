@@ -1,5 +1,5 @@
 ---
-title: Home
+title: KlatText Workshop
 ---
 
 # Workshop Template!
