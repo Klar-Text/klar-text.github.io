@@ -115,12 +115,12 @@ footer {
             border-radius: 50%;
             object-fit: cover;
         }
-        .name {
+        .membername {
             font-weight: bold;
             margin-top: 10px;
             font-size: 18px;
         }
-        .title {
+        .membertitle {
             font-size: 14px;
             color: gray;
             margin-top: 5px;
