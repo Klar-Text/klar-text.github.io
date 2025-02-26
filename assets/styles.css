@@ -63,7 +63,9 @@ nav ul li a {
     color: #0065BD; /* TU München Blue */
     margin-bottom: 2em;
 }
-
+.li{
+    margin-top: 20px;
+}
 footer {
     background: #333;
     color: white;
