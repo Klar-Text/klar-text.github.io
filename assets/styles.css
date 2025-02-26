@@ -135,12 +135,12 @@ footer {
         .icons {
             margin-top: 10px;
         }
-        .fab .fa-brands .fas{
+        .fab, .fa-brands, .fas{
             color: #3070b3; /* Blue color */
             text-decoration: none;
             margin: 0 10px;
         }
-        .fab:hover .fas:hover .fa-brands:hover{
+        .fab:hover, .fas:hover, .fa-brands:hover{
             color: #0056b3; /* Darker shade on hover */
         }
 
