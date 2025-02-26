@@ -12,11 +12,15 @@ header {
     top: 0;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: right;
+    padding-right: 20px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: inline-block;
 }
 
 nav ul li {
@@ -30,12 +34,20 @@ nav ul li a {
     color: black;
 }
 
-h1 .tu-berlin {
-    color: #E2001A;
+.main-title {
+    font-size: 3rem;
+    color: #E2001A; /* TU Berlin Red */
+    margin-top: 80px;
 }
 
-h1 .tu-munchen {
-    color: #0065BD;
+.sub-title {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #0065BD; /* TU München Blue */
 }
 
 footer {
