@@ -49,11 +49,13 @@ nav ul li a {
     font-size: 3rem;
     color: #E2001A; /* TU Berlin Red */
     margin-top: 80px;
+    margin-bottom: 5px; /* Reduce space between main and sub header */
 }
 
 .sub-title {
     font-size: 1.5rem;
     color: black;
+    margin-top: 5px; /* Reduce space between main and sub header */
 }
 
 .section-title {
