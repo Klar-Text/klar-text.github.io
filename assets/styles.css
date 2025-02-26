@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: white;
 }
 
 header {
@@ -34,6 +35,16 @@ nav ul li a {
     color: black;
 }
 
+.white-bg {
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.gray-bg {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+}
+
 .main-title {
     font-size: 3rem;
     color: #E2001A; /* TU Berlin Red */
@@ -51,20 +62,25 @@ nav ul li a {
 }
 
 footer {
-    background: #f1f1f1;
-    padding: 20px;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-footer table {
+#organizers table {
     margin: auto;
 }
 
-footer td {
+#organizers td {
     padding: 20px;
     text-align: center;
 }
 
-footer img {
+#organizers img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
