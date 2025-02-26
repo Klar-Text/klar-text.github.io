@@ -104,8 +104,8 @@ footer {
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
-            /*margin: 0 auto;
-            width: 60%;*/
+            margin: 0 auto;
+            width: 60%;
         }
         .member {
             width: 200px;
@@ -120,10 +120,10 @@ footer {
         .membername {
             font-weight: bold;
             margin-top: 10px;
-            font-size: 18px;
+            font-size: 16px;
         }
         .membertitle {
-            font-size: 14px;
+            font-size: 12px;
             color: gray;
             margin-top: 5px;
         }
