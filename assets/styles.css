@@ -61,6 +61,7 @@ nav ul li a {
 .section-title {
     font-size: 2rem;
     color: #0065BD; /* TU München Blue */
+    margin-bottom: 2em;
 }
 
 footer {
@@ -103,7 +104,8 @@ footer {
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
-            margin: 50px;
+            margin: 0 auto;
+            width: 60%;
         }
         .member {
             width: 200px;
