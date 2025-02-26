@@ -104,8 +104,8 @@ footer {
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
-            margin: 0 auto;
-            width: 60%;
+            /*margin: 0 auto;
+            width: 60%;*/
         }
         .member {
             width: 200px;
