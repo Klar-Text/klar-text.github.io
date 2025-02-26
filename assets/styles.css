@@ -97,3 +97,42 @@ footer {
 .social-links a:hover {
     color: #E2001A;
 }
+
+.container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px;
+        }
+        .member {
+            width: 200px;
+            text-align: center;
+        }
+        .member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .name {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .title {
+            font-size: 14px;
+            color: gray;
+            margin-top: 5px;
+        }
+        .icons {
+            margin-top: 10px;
+        }
+        .fab {
+            color: #3070b3; /* Blue color */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .fab:hover {
+            color: #0056b3; /* Darker shade on hover */
+        }
