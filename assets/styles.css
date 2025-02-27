@@ -112,6 +112,7 @@ footer {
             gap: 30px;
             margin: 0 auto;
             width: 50%;
+            line-height: 1.5;
         }
         .member {
             width: 200px;
