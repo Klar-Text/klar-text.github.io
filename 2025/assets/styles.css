@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    line-height: 2;
+}
+
+header {
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: right;
+    padding-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.white-bg {
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.gray-bg {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    color: #E2001A; /* TU Berlin Red */
+    margin-top: 80px;
+    margin-bottom: 1px; /* Reduce space between main and sub header */
+}
+.main-title-blue {
+    font-size: 3rem;
+    color: #0065BD; /* TU Berlin Red */
+    margin-top: 80px;
+    margin-bottom: 1px; /* Reduce space between main and sub header */
+}
+
+
+.sub-title {
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 1px; /* Reduce space between main and sub header */
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #0065BD; /* TU München Blue */
+    margin-bottom: 2em;
+}
+li{
+    margin-top: 20px;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}
+
+#organizers table {
+    margin: auto;
+}
+
+#organizers td {
+    padding: 20px;
+    text-align: center;
+}
+
+#organizers img {
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #0065BD;
+}
+
+.social-links a:hover {
+    color: #E2001A;
+}
+
+.container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 0 auto;
+            width: 50%;
+            line-height: 1.5;
+        }
+        .member {
+            width: 200px;
+            text-align: center;
+        }
+        .member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .membername {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .membertitle {
+            font-size: 12px;
+            color: gray;
+            margin-top: 5px;
+        }
+        .icons {
+            margin-top: 10px;
+        }
+        .fab, .fa-brands, .fas{
+            color: #3070b3; /* Blue color */
+            text-decoration: none;
+            margin: 0 2px;
+        }
+        .fab:hover, .fas:hover, .fa-brands:hover{
+            color: #0056b3; /* Darker shade on hover */
+        }
+
+        table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    /* border: 1px solid #ddd; */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #004F9F; /* TU München Blue */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: #0065BD;
+  text-decoration: none; /* optional: remove underline */
+}
+
+
+/* Sponsor Images */
+table.sponsors{width:800px;}
+td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.sponsor img{width: 100%}
