@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>KlarText 2025</title>
+    <title>KlarText 2026</title>
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
@@ -21,48 +21,138 @@
         </nav>
     </header>
 
+<script>
+// Copy the BibTeX entry stored in the element with the given id to the clipboard
+function copyBibtex(id, button) {
+  var text = document.getElementById(id).textContent.trim();
+  var label = button.innerHTML;
+  function done(msg) {
+    button.innerHTML = msg;
+    setTimeout(function () { button.innerHTML = label; }, 2000);
+  }
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(
+      function () { done('<i class="fa-solid fa-check"></i> Copied!'); },
+      function () { done('Copy failed'); }
+    );
+  } else {
+    // Fallback for browsers without the async Clipboard API
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = document.execCommand("copy");
+    document.body.removeChild(ta);
+    done(ok ? '<i class="fa-solid fa-check"></i> Copied!' : 'Copy failed');
+  }
+}
+</script>
+
     <section id="home" class="white-bg">
         <h1 class="main-title-blue">Accepted Papers</h1>
 
 
         <ul class="accepted-papers">
   <li class="paper">
-    <div class="paper-title"><a href="German Text Simplification With Generative Language Models.pdf"><b>German Text Simplification With Generative Language Models – A Comparison Of Different LLMs</b></a></div>
+    <div class="paper-title"><a href="German_Text_Simplification_With_Generative_Language_Models.pdf"><b>German Text Simplification With Generative Language Models – A Comparison Of Different LLMs</b></a></div>
     <div class="paper-authors">Tim Ostrolucký</div>
+    <button type="button" class="bibtex-btn" onclick="copyBibtex('bibtex_german_simp', this)"><i class="fa-regular fa-copy"></i> Copy BibTeX citation</button>
+    <pre class="bibtex" id="bibtex_german_simp" hidden>@inproceedings{
+Ostrolucky2026german,
+title={German Text Simplification With Generative Language Models {\textendash} A Comparison Of Different {LLM}s},
+author={Tim Ostrolucký},
+booktitle={KlarText 2026 Workshop on German Text Simplification {\&} Readability Assessment},
+year={2026},
+url={https://klar-text.github.io/acceptedpapers/German_Text_Simplification_With_Generative_Language_Models.pdf}
+}</pre>
   </li>
 
   <li class="paper">
-    <div class="paper-title"><b>	
-Learner-Centered Automatic Readability Assessment: Leveraging Hybrid Models to Consider L1</b></div>
+    <div class="paper-title"><a href="Learner-Centered_Automatic_Readability_Assessment.pdf"><b>	
+Learner-Centered Automatic Readability Assessment: Leveraging Hybrid Models to Consider L1</b></a></div>
     <div class="paper-authors">Denise Löfflad, Eleni Kanli</div>
+    <button type="button" class="bibtex-btn" onclick="copyBibtex('bibtex_learner', this)"><i class="fa-regular fa-copy"></i> Copy BibTeX citation</button>
+    <pre class="bibtex" id="bibtex_learner" hidden>@inproceedings{
+Lofflad2026learnercentered,
+title={Learner-Centered Automatic Readability Assessment: Leveraging Hybrid Models to Consider L1},
+author={L{\"o}fflad, Denise and Kanli, Eleni},
+booktitle={KlarText 2026 Workshop on German Text Simplification {\&} Readability Assessment},
+year={2026},
+url={https://klar-text.github.io/acceptedpapers/Learner-Centered_Automatic_Readability_Assessment.pdf}
+}</pre>
   </li>
 
   <li class="paper">
-    <div class="paper-title"><b>	
-Human Evaluation in Text Simplification: Practical Recommendations for Including Persons with Cognitive and Intellectual Disabilities</b></div>
+    <div class="paper-title"><a href="Human_Evaluation_in_Text_Simplification.pdf"><b>	
+Human Evaluation in Text Simplification: Practical Recommendations for Including Persons with Cognitive and Intellectual Disabilities</b></a></div>
     <div class="paper-authors">Luisa Carrer, Andreas Säuberli, Andrea Sterchi, Martin Kappus, Sarah Ebling</div>
+    <button type="button" class="bibtex-btn" onclick="copyBibtex('bibtex_human', this)"><i class="fa-regular fa-copy"></i> Copy BibTeX citation</button>
+    <pre class="bibtex" id="bibtex_human" hidden>@inproceedings{
+carrer2026human,
+title={Human Evaluation in Text Simplification: Practical Recommendations for Including Persons with Cognitive and Intellectual Disabilities},
+author={Carrer, Luisa and S{\"a}uberli, Andreas and Sterchi, Andrea and Kappus, Martin and Ebeling, Sarah},
+booktitle={KlarText 2026 Workshop on German Text Simplification {\&} Readability Assessment},
+year={2026},
+url={https://klar-text.github.io/acceptedpapers/Human_Evaluation_in_Text_Simplification.pdf}
+}</pre>
   </li>
 
   <li class="paper">
-    <div class="paper-title"><b>Alles KLAR? A Rule-Based Simplicity Score for German Text Simplification</b></div>
+    <div class="paper-title"><a href="Alles_KLAR_A_Rule_Based_Simplicity_Score.pdf"><b>Alles KLAR? A Rule-Based Simplicity Score for German Text Simplification</b></a></div>
     <div class="paper-authors">Nicolo' Brandizzi, Johannes Leveling</div>
+    <button type="button" class="bibtex-btn" onclick="copyBibtex('bibtex_alles', this)"><i class="fa-regular fa-copy"></i> Copy BibTeX citation</button>
+    <pre class="bibtex" id="bibtex_alles" hidden>@inproceedings{
+Brandizzi2026alles,
+title={Alles {KLAR}? A Rule-Based Simplicity Score for German Text Simplification},
+author={Brandizzi, Nicolo and Leveling, Johannes},
+booktitle={KlarText 2026 Workshop on German Text Simplification {\&} Readability Assessment},
+year={2026},
+url={https://klar-text.github.io/acceptedpapers/Alles_KLAR_A_Rule_Based_Simplicity_Score.pdf}
+}</pre>
   </li>
 
   <li class="paper">
-    <div class="paper-title"><b>Linguistic Features of German Easy and Plain Language: A Cross-Dataset Analysis</b></div>
+    <div class="paper-title"><a href="Linguistic_Features_of_German_Easy_and_Plain_Language.pdf"><b>Linguistic Features of German Easy and Plain Language: A Cross-Dataset Analysis</b></a></div>
     <div class="paper-authors">Jeanette Bewersdorff, Torsten Zesch</div>
+    <button type="button" class="bibtex-btn" onclick="copyBibtex('bibtex_linguistic', this)"><i class="fa-regular fa-copy"></i> Copy BibTeX citation</button>
+    <pre class="bibtex" id="bibtex_linguistic" hidden>@inproceedings{
+Bewersdorff2026linguistik,
+title={Linguistic Features of German Easy and Plain Language: A Cross-Dataset Analysis},
+author={Bewersdorff, Jeanette and Zesch, Torsten},
+booktitle={KlarText 2026 Workshop on German Text Simplification {\&} Readability Assessment},
+year={2026},
+url={https://klar-text.github.io/acceptedpapers/Linguistic_Features_of_German_Easy_and_Plain_Language.pdf}
+}</pre>
   </li>
 
   <li class="paper">
-    <div class="paper-title"><b>	
-Multi-Metric Study of Language in German Physics Teaching</b></div>
+    <div class="paper-title"><a href="Multi-Metric_Study_of_Language_in_German_Physics_Teaching.pdf"><b>	
+Multi-Metric Study of Language in German Physics Teaching</b></a></div>
     <div class="paper-authors">Vitor Lécio Lacerda Fontanella, Gunnar Friege, Christian Wartena</div>
+    <button type="button" class="bibtex-btn" onclick="copyBibtex('bibtex_multi', this)"><i class="fa-regular fa-copy"></i> Copy BibTeX citation</button>
+    <pre class="bibtex" id="bibtex_multi" hidden>@inproceedings{
+Fontanella2026multimetric,
+title={Multi-Metric Study of Language in German Physics Teaching},
+author={Fontanella, Vitor and Friege, Gunnar and Wartena, Christian},
+booktitle={KlarText 2026 Workshop on German Text Simplification {\&} Readability Assessment},
+year={2026},
+url={https://klar-text.github.io/acceptedpapers/Multi-Metric_Study_of_Language_in_German_Physics_Teaching.pdf}
+}</pre>
   </li>
 
   <li class="paper">
-    <div class="paper-title"><b>	
-Participation in Accessible NLP as an Empty Signifier: Reflections from a Project on Translating Spoken German into German E2R</b></div>
+    <div class="paper-title"><a href="Participation_in_Accessible_NLP_and_ATS_as_an_Empty_Signifier.pdf"><b>	
+Participation in Accessible NLP as an Empty Signifier: Reflections from a Project on Translating Spoken German into German E2R</b></a></div>
     <div class="paper-authors">Simon Egbert, Maximilian Waschka, Gerhard Schreiber</div>
+    <button type="button" class="bibtex-btn" onclick="copyBibtex('bibtex_participation', this)"><i class="fa-regular fa-copy"></i> Copy BibTeX citation</button>
+    <pre class="bibtex" id="bibtex_participation" hidden>@inproceedings{
+Egbert2026participation,
+title={Participation in Accessible NLP as an Empty Signifier: Reflections from a Project on Translating Spoken German into German E2R},
+author={Egbert, Simon and Waschka, Maximilian and Schreiber, Gerhard},
+booktitle={KlarText 2026 Workshop on German Text Simplification {\&} Readability Assessment},
+year={2026},
+url={https://klar-text.github.io/acceptedpapers/Participation_in_Accessible_NLP_and_ATS_as_an_Empty_Signifier.pdf}
+}</pre>
   </li>
 </ul>
 
